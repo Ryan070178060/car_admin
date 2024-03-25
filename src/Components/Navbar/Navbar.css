@@ -1,0 +1,33 @@
+/* Styles for the navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px rgb(218, 192, 192);
+    margin-bottom: 1px;
+    background: green;
+    height: 10vh;
+}
+
+/* Styles for the nav-logo */
+.nav-logo {
+    max-width: 250px;
+    
+}
+
+/* Styles for the nav-profile */
+.nav-profile {
+    width: 45px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+    
+    /* Adjust the size of the nav-logo as needed */
+    .nav-logo {
+       max-width: 150px;
+    }
+}
