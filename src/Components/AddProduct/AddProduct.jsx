@@ -31,6 +31,7 @@ const AddProduct = () => {
 
     try {
       const response = await fetch('https://car-backend-tt86.onrender.com/upload', {
+        mode:'no-cors',
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -49,6 +50,7 @@ const AddProduct = () => {
       product.image = responseData.image_url;
       console.log('Updated product details:', product);
       await fetch('https://car-backend-tt86.onrender.com/addproduct',{
+        mode:'no-cors',
         method:'POST',
         headers:{
             Accept:'application/json',
