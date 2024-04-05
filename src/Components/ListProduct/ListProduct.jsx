@@ -9,7 +9,7 @@ const ListProduct = () => {
   const [allproducts,setAllProducts] = useState ([]);
 
   const fetchInfo = async ()=>{
-    await fetch('https://autodealer.onrender.com.com/allproducts')
+    await fetch('https://autodealer.onrender.com/allproducts')
     .then((res)=>res.json())
     .then ((data)=>{setAllProducts(data)});
   }
