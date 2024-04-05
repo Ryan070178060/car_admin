@@ -30,7 +30,7 @@ const AddProduct = () => {
     formData.append('product', image);
 
     try {
-      const response = await fetch('https://car-backend-tt86.onrender.com/upload', {
+      const response = await fetch('https://autodealer.onrender.com/upload', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -48,7 +48,7 @@ const AddProduct = () => {
     if (responseData && responseData.success) {
       product.image = responseData.image_url;
       console.log('Updated product details:', product);
-      await fetch('https://car-backend-tt86.onrender.com/addproduct',{
+      await fetch('https://autodealer.onrender.com/addproduct',{
         method:'POST',
         headers:{
             Accept:'application/json',
